@@ -1,0 +1,66 @@
+.infoPanelLeft {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+    height: 70vh;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.infoTitle {
+    font-size: 3vw;
+    font-weight: bold;
+    width: 65%;
+}
+
+.infoDescription {
+    font-size: 2vw;
+    width: 48%;
+}
+
+.infoGroup {
+    display: flex;
+    align-items: center;
+}
+
+.infoIcon {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.infoPanelRight {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    top: 50%;
+    right: 50px;
+    transform: translate(0, -50%);
+    font-size: 26px;
+    height: 50vh;
+    background-color: gree;
+}
+
+.infoButton {
+    color: white;
+    font-weight: 500;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    padding: 5px 50px;
+    margin-left: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infoButton:hover {
+    background-color: white;
+    color: var(--blue);
+}

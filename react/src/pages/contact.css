@@ -1,0 +1,19 @@
+.contactGroup {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    margin: 12vh 0;
+}
+
+.contactIcon {
+    font-size: 60px;
+    margin-right: 20px
+}
+
+.contactUs {
+    color: var(--black);
+    font-size: 100px;
+    font-family: 'Sigmar', sans-serif;
+    float: right;
+}

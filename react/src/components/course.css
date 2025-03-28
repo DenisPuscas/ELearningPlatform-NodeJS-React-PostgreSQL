@@ -1,0 +1,122 @@
+.courseCard {
+    position: relative;
+    min-width: 250px;
+    max-width: 420px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.courseCard.expired {
+    background-color: #ffe0e0;
+}
+
+.courseCard.owned {
+    background-color: #e0e0e0;
+}
+
+.courseCard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.courseCard.owned:hover {
+    transform: none;
+}
+
+.courseCard.expired:hover {
+    transform: none;
+}
+
+.courseTitle {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.courseCategory {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.courseDuration {
+    margin-left: 10px;
+
+}
+
+.coursePrice {
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.courseEnroll {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: var(--blue);
+    font-weight: 500;
+    border: 2px solid var(--blue);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.courseDisabled {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: var(--blue);
+    font-weight: 500;
+    border: 2px solid var(--blue);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.courseEnroll:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
+.courseGroup {
+    display: flex;
+    align-items: center;
+}
+
+.courseIcon {
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.courseTrash {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 30px;
+    color: var(--blue);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.courseTrash:hover {
+    background-color: #e0e0e0;
+}

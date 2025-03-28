@@ -1,0 +1,114 @@
+.chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 101;
+}
+
+.chatButton {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.chatIcon {
+    padding: 10px;
+    background-color: var(--blue);
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.chatPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 450px;
+    background-color: var(--blue);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.chatCloseBtn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    top: 2px;
+    right: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.chatCloseBtn:hover {
+    background-color: var(--shadow-blue);
+}
+
+.chatScreen {
+    width: 100%;
+    height: 85%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.chatInput {
+    width: 83%;
+    height: 5%;
+    padding: 10px 45px 10px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.chatSendIcon {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.chatMessageContainer {
+    display: flex;
+    justify-content: start;
+    width: 94%;
+    height: auto;
+    margin: 3%;
+}
+
+.chatMessageContainer.que {
+    display: flex;
+    justify-content: end;
+    width: 94%;
+    margin: 3%;
+}
+
+.chatMessage {
+    padding: 8px 10px;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.chatMessage.que {
+    background-color: var(--blue);
+    color: white;
+}
+
+.chatMessage.err {
+    border: none;
+    color: red;
+}

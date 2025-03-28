@@ -1,0 +1,56 @@
+.signupPanel {
+    width: 90%;
+    display: flex;
+    margin-top: 100px;
+    height: 60vh;
+    padding: 0 5%;
+}
+
+.signupPanelLeft {
+    /* background-color: rgba(255, 0, 0, 0.2); */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signupPanelRight {
+    /* background-color: rgba(0, 255, 0, 0.2); */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+/* .signupButton {
+    width: 200px;
+    margin-right: 80px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+.signupButton:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+.signupTitle {
+    font-family: 'Sigmar', sans-serif;
+    font-size: 4vw;
+    color: white;
+}
+
+.signupSubTitle {
+    font-size: 30px;
+    font-size: 2vw;
+    color: white;
+}

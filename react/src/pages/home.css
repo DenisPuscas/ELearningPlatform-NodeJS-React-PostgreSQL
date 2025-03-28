@@ -1,0 +1,67 @@
+.homeTitle {
+    font-family: 'Sigmar', sans-serif;
+    font-size: 4vw;
+}
+
+.homeSubtitle {
+    font-size: 1.3vw;
+}
+
+.homeTypeGroup {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.homeCourseType {
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.homeViewAllBtn {
+    color: white;
+    border: 2px solid white;
+    background-color: var(--blue);
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-left: 25px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeViewAllBtn:hover {
+    background-color: white;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.homeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1030px) {
+    .homeGrid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 710px) {
+    .homeGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .homeTitle {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .homeSubtitle {
+        font-size: 16px;
+    }
+}
